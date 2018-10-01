@@ -6,7 +6,7 @@ module.exports.newChat = (application, req, res) => {
     const errors = req.validationErrors();
 
     if (errors) {
-        res.send(errors);
+        res.render('index', { errors });
     }
 
     res.render('chat');
