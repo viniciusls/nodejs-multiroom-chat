@@ -36,6 +36,24 @@
                             </form>
                         </div>
                     </div>
+
+                    <% if (errors.length > 0) { %>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="alert alert-danger">
+                                        <strong>Atenção!</strong>
+
+                                        <ul>
+                                            <% for (let i = 0; i < errors.length; i++) { %>
+                                                <li><%= errors[i].msg %></li>
+                                            <% } %>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
                 </div>
             </div>
         </div>
