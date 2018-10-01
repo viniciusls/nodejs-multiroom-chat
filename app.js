@@ -1,5 +1,7 @@
 const app = require('./config/server');
 
-app.listen(3000, () => {
+let server = app.listen(3000, () => {
     console.log('Server is running');
 });
+
+require('socket.io').listen(server);
