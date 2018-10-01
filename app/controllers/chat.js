@@ -8,6 +8,8 @@ module.exports.newChat = (application, req, res) => {
 
     if (errors) {
         res.render('index', { errors });
+
+        return;
     }
 
     res.render('chat');
