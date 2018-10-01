@@ -12,5 +12,7 @@ module.exports.newChat = (application, req, res) => {
         return;
     }
 
+    application.get('io').emit('newMsg', { msg: req.body.username + ' entrou na sala.' });
+
     res.render('chat');
 };

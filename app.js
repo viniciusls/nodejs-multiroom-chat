@@ -6,6 +6,8 @@ let server = app.listen(3000, () => {
 
 let io = require('socket.io').listen(server);
 
+app.set('io', io);
+
 io.on('connection', (socket) => {
     console.log("New client connected");
 
