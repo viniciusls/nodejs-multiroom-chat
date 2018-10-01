@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-multiroom-chat",
+  "version": "1.0.0",
+  "description": "Multiroom chat app with WebSocket from NodeJS Course @ Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusls/nodejs-multiroom-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "websocket",
+    "nodejs"
+  ],
+  "author": "Vinicius Silva <vinicius768@msn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viniciusls/nodejs-multiroom-chat/issues"
+  },
+  "homepage": "https://github.com/viniciusls/nodejs-multiroom-chat#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
