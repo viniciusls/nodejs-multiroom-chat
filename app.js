@@ -4,4 +4,8 @@ let server = app.listen(3000, () => {
     console.log('Server is running');
 });
 
-require('socket.io').listen(server);
+let io = require('socket.io').listen(server);
+
+io.on('connection', (socket) => {
+    console.log("New client connected");
+});
