@@ -71,7 +71,7 @@
 		<div class="container">
             <div class="row conversa" id="conversa">
 				<div class="col-md-1"></div>
-				<div class="col-md-10">
+				<div class="col-md-10" id="dialogos">
 					
 				</div>
 				<div class="col-md-1"></div>
@@ -126,6 +126,13 @@
 
 			socket.on('newMsg', (params) => {
 				console.log("New message received: " + params.msg);
+
+				let html = '<div class="dialogo">';
+				html += '<h4>' + params.username + '</h4>';
+				html += '<p>' + params.msg + '</p>';
+				html += '</div>';
+
+				$('#dialogos').append(html);
 			});
 		</script>
 	</body>
